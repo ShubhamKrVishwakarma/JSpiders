@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Header.css"
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -10,20 +11,32 @@ const Header = () => {
                 <span>QUALITY EDUCATION & LEARNING</span>
             </div>
             <div className='flex header-social-links'>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-youtube"></i>
             </div>
         </div>
         <nav className="flexSB">
             <ul className="flexSB">
-                <li>Home</li>
-                <li>All Courses</li>
-                <li>About</li>
-                <li>Team</li>
-                <li>Placement</li>
-                <li>Contact</li>
+                <li>
+                    <Link to="/" style={{ textDecoration: "none", color: "#5e72e4" }}>Home</Link>
+                </li>
+                <li>
+                    <Link to="/courses" style={{ textDecoration: "none", color: "#5e72e4" }}>Courses</Link>
+                </li>
+                <li>
+                    <Link to="/about" style={{ textDecoration: "none", color: "#5e72e4" }}>About</Link>
+                </li>
+                <li>
+                    <Link to="/team" style={{ textDecoration: "none", color: "#5e72e4" }}>Team</Link>
+                </li>
+                <li>
+                    <Link to="/placement" style={{ textDecoration: "none", color: "#5e72e4" }}>Placement</Link>
+                </li>
+                <li>
+                    <Link to="/contact" style={{ textDecoration: "none", color: "#5e72e4" }}>Contact</Link>
+                </li>
             </ul>
             <button>Get Started</button>
         </nav>

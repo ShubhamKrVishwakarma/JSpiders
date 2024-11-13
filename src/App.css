@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue: #5e72e4;
+  --light-blue: #11cdef;
+  --green: #2dce89;
+  --red: #f5365c;
+  --orange: #fb6340;
+  --light-gray: #e9ecef;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
 .flex {
   display: flex;
   justify-content: center;

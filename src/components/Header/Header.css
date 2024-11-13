@@ -2,6 +2,10 @@
     padding: 15px 50px 8px 50px;
 }
 
+.logo h1 {
+    color: var(--red);
+}
+
 .header-social-links {
     gap: 20px;
 }
@@ -9,19 +13,16 @@
 .header-social-links i {
     font-size: 22px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #1eb2a6;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    color: var(--red);
     transition: 0.5s all ease-in;
     cursor: pointer;
 }
 
-.header-social-links i:hover {
-    color: #178f85;
-}
-
 nav {
-    border-top: 2px solid gray;
-    padding: 10px 50px 0px 50px;
+    border: 2px solid gray;
+    padding: 15px 10px;
+    margin: 0 40px;
 }
 
 nav ul {
@@ -30,16 +31,24 @@ nav ul {
 }
 
 nav button {
-    background-color: #1eb2a6;
+    background-color: var(--red);
     color: #fff;
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 10px;
     transition: 0.3s all ease-in;
 }
 
-nav button:hover {
-    background-color: #178f85;
+@media screen and (max-width: 600px) {
+    nav {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-top {
+        flex-direction: column;
+    }
 }
